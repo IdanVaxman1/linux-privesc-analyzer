@@ -1,8 +1,15 @@
 import platform
-import os
-import socket
-import subprocess
 
 
-def get_system_info():
-    print("OS: ",platform.system())
+
+
+def scan_system():
+    system_info = {
+        "system": platform.system(),
+        "release": platform.release(),
+        "version": platform.version(),
+        "machine": platform.machine(),
+        "hostname": platform.node()
+    }
+
+    return system_info

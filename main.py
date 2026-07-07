@@ -1,4 +1,4 @@
-from modules.system_info import get_system_info
+from modules.system_info import scan_system
 
 
-get_system_info()
+print(scan_system())
